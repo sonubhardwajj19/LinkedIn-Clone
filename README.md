@@ -1,4 +1,4 @@
-# inkedIn UI Clone
+# LinkedIn UI Clone
 
 ## Description
 
