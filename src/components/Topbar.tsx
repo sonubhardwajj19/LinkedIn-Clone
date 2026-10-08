@@ -1,4 +1,5 @@
 import { HomeIcon, JobsIcon, MessageIcon, NetworkIcon, NotificationIcon, ProfileIcon } from "./Icons"
+import { NavItem } from "./NavItem"
 
 
 export const Topbar = () => {
@@ -30,26 +31,26 @@ export const Topbar = () => {
 
         <div className="flex translate-x-25">
           <nav className="flex">
-            <div className="flex gap-5 items-center border-r border-gray-300 px-5">
-              <HomeIcon>Home</HomeIcon>
-              <NetworkIcon>My Network </NetworkIcon>
-              <JobsIcon >Jobs</JobsIcon >
-              <MessageIcon >Messaging</MessageIcon >
-              <NotificationIcon >Notifications</NotificationIcon >
-              <span className="text-xs flex flex-col items-center px-1">
-                <ProfileIcon />
-              </span>
+            <div className="flex gap-6 items-center border-r border-gray-300 px-4">
+                <NavItem Icon={HomeIcon}>Home</NavItem>
+                <NavItem Icon={NetworkIcon}>My Network</NavItem>
+                <NavItem Icon={JobsIcon}>Jobs</NavItem>
+                <NavItem Icon={MessageIcon}>Messaging</NavItem>
+                <NavItem Icon={NotificationIcon}>Notifications</NavItem>
+                <span className="text-xs flex flex-col items-center px-1">
+                  <ProfileIcon />
+                </span>
             </div>
 
 
             <div className="flex items-center px-5">
               <div className="flex-col">
                 <span className="flex justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" className="fill-current text-gray-500 hover:text-black " width="24" height="24" focusable="false">
                     <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
                   </svg>
                 </span>
-                <span className="flex text-gray-500 items-center justify-center text-xs">For Bussiness
+                <span className="flex text-gray-500 items-center justify-center text-xs hover:text-black ">For Bussiness
                   <svg xmlns="http://www.w3.org/2000/svg" fill="black-500" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                   </svg>
@@ -58,13 +59,14 @@ export const Topbar = () => {
             </div>
 
           </nav>
-
         </div>
+
+
       </div>
 
 
     </header>
-  
+
   </>
 }
 
